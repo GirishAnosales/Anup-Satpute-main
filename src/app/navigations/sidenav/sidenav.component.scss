@@ -1,0 +1,270 @@
+@import '../../styles/theme.scss';
+@import '../../styles/keyframes.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+
+        .r1 {
+            .r1c1 {
+                padding: 0%;
+
+                .mat-toolbar {
+                    background-color: #00000020;
+                    backdrop-filter: blur(2rem);
+                    position: fixed;
+                    top: 0;
+                    z-index: 99;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    .r1c1r1 {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .r1c1r1c1 {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            width: max-content;
+
+                            .social-media-group {
+                                padding: 1rem 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .mat-icon-button {
+                                    transition: 0.3s;
+
+                                    .bi-icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: large;
+                                        color: $white;
+                                        transition: 0.3s;
+                                    }
+                                }
+
+                                .mat-icon-button:hover {
+                                    transition: 0.3s;
+
+                                    .bi-icon {
+                                        font-size: x-large;
+                                        transition: 0.3s;
+                                    }
+                                }
+                            }
+                        }
+
+                        .r1c1r1c2 {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: max-content;
+
+                            .logo-wrapper {
+                                .logo {
+                                    width: 3rem;
+                                }
+                            }
+
+                            .logo-wrapper {
+                                position: absolute;
+                                left: 45%;
+                                right: -1px;
+                            }
+                        }
+
+                        .r1c1r1c3 {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            width: max-content;
+
+                            .button-group {
+                                display: flex;
+                                align-items: center;
+
+                                .mat-button {
+                                    color: $white;
+                                }
+
+                                .mat-icon-button {
+                                    .mat-icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: $white;
+                                    }
+                                }
+
+                                .mat-icon-button:hover {
+                                    .mat-icon {
+                                        color: $light-blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mat-sidenav-container {
+                    .mat-sidenav {
+                        width: 100% !important;
+                        background-color: #00000080;
+                        backdrop-filter: blur(0.5rem);
+                        padding-top: 4rem;
+
+                        .mat-nav-list {
+                            animation: fade-in 2s;
+
+                            .close-button {
+                                display: flex;
+                                align-content: flex-end;
+                                justify-content: flex-end;
+                                align-self: flex-end;
+
+                                .mat-icon-button {
+                                    .mat-icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: $white;
+                                    }
+                                }
+
+                                .mat-icon-button:hover {
+                                    .mat-icon {
+                                        color: $white;
+                                    }
+                                }
+                            }
+
+                            .a {
+                                text-align: start;
+                                text-indent: 2rem;
+
+                                .h6 {
+                                    text-transform: uppercase;
+                                    color: $white;
+                                    font-size: 1rem;
+                                    transition: 0.3s ease-in-out;
+                                }
+                            }
+
+                            .a:hover {
+                                .h6 {
+                                    color: $light-beige;
+                                    font-size: 1.3rem;
+                                    transition: 0.3s ease-in-out;
+                                    letter-spacing: 0.5rem;
+                                }
+                            }
+
+                            .mat-accordion {
+                                .mat-expansion-panel {
+                                    background-color: inherit;
+                                    box-shadow: none;
+
+                                    .mat-expansion-panel-header {
+                                        .mat-panel-title {
+                                            .h6 {
+                                                text-transform: uppercase;
+                                                color: $white;
+                                                font-size: 1rem;
+                                                transition: 0.3s ease-in-out;
+                                            }
+                                        }
+                                    }
+
+                                    .mat-expansion-panel-header:hover {
+                                        .mat-panel-title {
+                                            .h6 {
+                                                color: $light-beige;
+                                                font-size: 1.3rem;
+                                                transition: 0.3s ease-in-out;
+                                                letter-spacing: 0.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-toolbar {
+                    .r1c1r1 {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+
+                        // .r1c1r1c1 {}
+
+                        .r1c1r1c2 {
+                            .logo-wrapper {
+                                position: absolute;
+                                left: 48.7%;
+                                right: 48.7%;
+                            }
+                        }
+
+                        // .r1c1r1c3 {}
+                    }
+                }
+
+                .mat-sidenav-container {
+                    .mat-sidenav {
+                        width: 60% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-toolbar {
+                    .r1c1r1 {
+                        width: 100%;
+                        // .r1c1r1c1 {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-sidenav-container {
+                    .mat-sidenav {
+                        width: 30% !important;
+                    }
+                }
+            }
+        }
+    }
+}

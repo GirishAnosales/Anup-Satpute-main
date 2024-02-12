@@ -1,0 +1,97 @@
+@import '../../styles/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .mat-dialog-content {
+        background-color: inherit;
+
+        .home {
+            margin-top: 4rem;
+
+            .r1 {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+
+                .r1c1 {
+                    padding: 4rem;
+
+                    .form {
+                        .mat-card-header {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .mat-card-title {
+                                .h3 {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        .mat-card-content {
+                            .mat-form-field {
+                                width: 100%;
+                                margin: 1rem 0;
+                                font-size: small;
+                                color: $white !important;
+
+                                .input {
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+
+                    .mat-card-footer {
+                        padding: 1rem;
+
+                        .h6 {
+                            font-size: small;
+                        }
+                    }
+
+                    .mat-card-actions {
+                        .mat-button {
+                            background-color: $white;
+                            font-size: small;
+                            text-transform: uppercase;
+                            border-radius: 0;
+                            transition: 0.3s;
+                            letter-spacing: 0.2rem;
+                            margin-left: 1rem;
+                        }
+
+                        .mat-button:hover {
+                            opacity: 0.5;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+
+                .r1c2 {
+                    padding: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .h3 {
+                        font-size: 6rem;
+                        font-family: 'Dancing Script', cursive !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .mat-dialog-content {
+        .home {
+            .r1 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+}

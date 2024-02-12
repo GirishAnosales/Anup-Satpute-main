@@ -1,0 +1,75 @@
+<mat-dialog-content class="mat-dialog-content">
+    <div class="container-fluid home">
+        <div class="row r1">
+            <div class="col-lg-6 r1c1">
+                <form class="form" [formGroup]="form">
+
+                    <!-- MAT CARD CONTENT -->
+                    <mat-card-content class="mat-card-content">
+
+                        <!-- YOUR NAME -->
+                        <mat-form-field class="mat-form-field" appearance="fill">
+                            <mat-label class="mat-label" style="color: black;">Full Name</mat-label>
+                            <input name="Full Name" type="text" class="input" formControlName="fullName" matInput>
+                            <mat-error *ngIf="form.get('fullName')?.hasError('required')">
+                                Name is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <!-- PROFESSION -->
+                        <mat-form-field class="mat-form-field" appearance="fill">
+                            <mat-label class="mat-label" style="color: black;">Profession</mat-label>
+                            <input name="Profession" type="text" class="input" formControlName="profession" matInput>
+                            <mat-error *ngIf="form.get('profession')?.hasError('required')">
+                                Name is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <!-- YOUR EMAIL -->
+                        <mat-form-field class="mat-form-field">
+                            <mat-label class="mat-label" style="color: black;">Email</mat-label>
+                            <input type="email" matInput formControlName="email">
+                            <mat-error
+                                *ngIf="form.get('email')?.hasError('email') && !form.get('email')?.hasError('required')">
+                                Please enter a valid email address
+                            </mat-error>
+                            <mat-error *ngIf="form.get('email')?.hasError('required')">
+                                Email is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <!-- YOUR NUMBER -->
+                        <mat-form-field class="mat-form-field" style="font-size: small; width: 100%;" appearance="fill">
+                            <mat-label class="mat-label" style="font-size: small; color: black;">Phone</mat-label>
+                            <input name="Phone" type="tel" class="input" formControlName="phone" matInput>
+                            <mat-error *ngIf="form.get('phone')?.hasError('required')">
+                                Phone Number is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <!-- YOUR MESSAGE -->
+                        <mat-form-field class="mat-form-field" appearance="fill">
+                            <mat-label class="mat-label" style="color: black;">Message</mat-label>
+                            <textarea name="Message" type="text" class="input" formControlName="message"
+                                matInput></textarea>
+                        </mat-form-field>
+
+                    </mat-card-content>
+
+                    <!-- ACTIONS -->
+                    <mat-card-actions class="mat-card-actions">
+                        <button class="mat-button"  (click)="onSubmit()" [disabled]="!form.valid" mat-raised-button>SUBMIT</button>
+                    </mat-card-actions>
+                </form>
+            </div>
+            <div class="col-lg-6 r1c2">
+                <!-- HEADER -->
+                <mat-card-header class="mat-card-header">
+                    <mat-card-title class="mat-card-title">
+                        <h3 class="h3">Become A Partner</h3>
+                    </mat-card-title>
+                </mat-card-header>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>

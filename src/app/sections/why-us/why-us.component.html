@@ -1,0 +1,18 @@
+<div class="container-fluid home">
+    <div class="row r1">
+        <h1 class="h1">WE ARE</h1>
+        <div class="col-lg-2 r1c1" *ngFor="let data of whyUs">
+            <div class="whyus-wrapper">
+                <div class="icons-group">
+                    <img class="icon" [src]="data.iconUrl" [alt]="data.title">
+                </div>
+                <div class="title">
+                    <h4 class="h4">{{data.title}}</h4>
+                </div>
+                <div class="content">
+                    <h6 class="h6">{{data.content}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

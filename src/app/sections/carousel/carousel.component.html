@@ -1,0 +1,12 @@
+<ngb-carousel class="ngb-carousel" *ngIf="images" >
+    <ng-template class="ng-template" ngbSlide *ngFor="let image of images">
+        <div class="carousel-wrapper">
+            <img class="img" [src]="image.imageSrc" [alt]="image.imageAlt">
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<div class="tag-line">
+    <h1 class="h1" style="margin: 0 auto;">ADDING SPACES TO LIFE</h1>
+    <button class="mat-button" routerLink="/completed-projects" mat-button>VIEW PROJECTS</button>
+</div>

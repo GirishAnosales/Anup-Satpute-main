@@ -1,0 +1,175 @@
+<div class="container-fluid home">
+    <div class="row r1">
+        <div class="col-sm-12 r1c1">
+
+            <mat-toolbar class="mat-toolbar">
+                <div class="row r1c1r1">
+                    <div class="col-sm-4 r1c1r1c1" *ngIf="!(isXSmall | async)">
+                        <div class="social-media-group">
+                            <!-- <a class="mat-icon-button" target="_blank" [href]="socialMediaLinksServiceData.facebook"
+                                mat-icon-button>
+                                <i class="bi-facebook bi-icon"></i>
+                            </a> -->
+                            <a class="mat-icon-button" target="_blank" [href]="socialMediaLinksServiceData.instagram"
+                                mat-icon-button>
+                                <i class="bi-instagram bi-icon"></i>
+                            </a>
+                            <a class="mat-icon-button" target="_blank" [href]="socialMediaLinksServiceData.linkedin"
+                                mat-icon-button>
+                                <i class="bi-linkedin bi-icon"></i>
+                            </a>
+                            <a class="mat-icon-button" target="_blank" [href]="socialMediaLinksServiceData.pinterest"
+                                mat-icon-button>
+                                <i class="bi-pinterest bi-icon"></i>
+                            </a>
+                            <a class="mat-icon-button" target="_blank" [href]="socialMediaLinksServiceData.youtube"
+                                mat-icon-button>
+                                <i class="bi-youtube bi-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 r1c1r1c2">
+                        <a class="logo-wrapper" href="home">
+                            <img class="logo" src="../../../assets/logo/Logo CBG.jpg" alt="Anup Lifestyles Logo">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4 r1c1r1c3">
+                        <div class="button-group">
+                            <button class="mat-button" type="button" mat-button (click)="openDialog()">CONTACT</button>
+                            <button class="mat-icon-button" type="button" aria-label="Toggle sidenav" mat-icon-button
+                                (click)="drawer.toggle()">
+                                <mat-icon class="mat-icon">menu</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </mat-toolbar>
+
+            <mat-sidenav-container class="mat-sidenav-container" dir="rtl">
+                <mat-sidenav #drawer class="mat-sidenav" fixedInViewport
+                    [attr.role]="(isSmall | async) ? 'dialog' : 'navigation'" mode="over">
+
+                    <mat-nav-list class="mat-nav-list" dir="ltr">
+
+                        <a class="a" mat-list-item (click)="drawer.close()" href="home">
+                            <h6 class="h6">Home</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Services</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="completed-projects">
+                            <h6 class="h6">Completed Projects</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="client-testimonials">
+                            <h6 class="h6">Client Testimonials</h6>
+                        </a>
+
+                        <!-- <p class="p">Premium</p> -->
+                        <mat-accordion class="mat-accordion">
+                            <mat-expansion-panel class="mat-expansion-panel" hideToggle>
+                                <mat-expansion-panel-header class="mat-expansion-panel-header">
+                                    <mat-panel-title class="mat-panel-title">
+                                        <h6 class="h6">Premium</h6>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <a class="a" mat-list-item (click)="drawer.close()" href="properties/premium-interiors">
+                                    <h6 class="h6">Premium Interiors</h6>
+                                </a>
+                                <a class="a" mat-list-item (click)="drawer.close()"
+                                    href="properties/corporate-interiors">
+                                    <h6 class="h6">Corporate Interiors</h6>
+                                </a>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        <!-- <p class="p">Modular</p> -->
+                        <mat-accordion class="mat-accordion">
+                            <mat-expansion-panel class="mat-expansion-panel" hideToggle>
+                                <mat-expansion-panel-header class="mat-expansion-panel-header">
+                                    <mat-panel-title class="mat-panel-title">
+                                        <h6 class="h6">Modular</h6>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <a class="a" mat-list-item (click)="drawer.close()"
+                                    href="properties/1-bhk-interior-design">
+                                    <h6 class="h6">1 BHK Interior Design</h6>
+                                </a>
+                                <a class="a" mat-list-item (click)="drawer.close()"
+                                    href="properties/2-bhk-interior-design">
+                                    <h6 class="h6">2 BHK Interior Design</h6>
+                                </a>
+                                <a class="a" mat-list-item (click)="drawer.close()"
+                                    href="properties/3-bhk-interior-design">
+                                    <h6 class="h6">3 BHK Interior Design</h6>
+                                </a>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        <!-- <p class="p">More</p> -->
+                        <a class="a" mat-list-item (click)="drawer.close()" href="become-a-partner">
+                            <h6 class="h6">Become a partner</h6>
+                        </a>
+
+                        <!-- <a class="a" mat-list-item (click)="drawer.close()" href="blog">
+                            <h6 class="h6">Blog</h6>
+                        </a> -->
+
+                        <mat-accordion class="mat-accordion">
+                            <mat-expansion-panel class="mat-expansion-panel" hideToggle>
+                                <mat-expansion-panel-header class="mat-expansion-panel-header">
+                                    <mat-panel-title class="mat-panel-title">
+                                        <h6 class="h6">Company Terms</h6>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+
+                                <a class="a" mat-list-item (click)="drawer.close()" href="payment">
+                                    <h6 class="h6">Payment</h6>
+                                </a>
+                                <a class="a" mat-list-item (click)="drawer.close()" href="warranty">
+                                    <h6 class="h6">Warranty</h6>
+                                </a>
+                                <a class="a" mat-list-item (click)="drawer.close()" href="cancellations">
+                                    <h6 class="h6">Cancellations</h6>
+                                </a>
+                                <a class="a" mat-list-item (click)="drawer.close()" href="grievance">
+                                    <h6 class="h6">Grievance</h6>
+                                </a>
+
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        <!-- <p class="p">Policies</p> -->
+                        <!-- <a class="a" mat-list-item (click)="drawer.close()" href="payment">
+                            <h6 class="h6">Payment</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="warranty">
+                            <h6 class="h6">Warranty</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="cancellations">
+                            <h6 class="h6">Cancellations</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="grievance">
+                            <h6 class="h6">Grievance</h6>
+                        </a> -->
+
+                    </mat-nav-list>
+                </mat-sidenav>
+
+                <mat-sidenav-content class="mat-sidenav-content" dir="ltr">
+
+                    <!-- ROUTER OUTLET -->
+                    <router-outlet></router-outlet>
+                    <app-footer></app-footer>
+
+                </mat-sidenav-content>
+
+            </mat-sidenav-container>
+        </div>
+    </div>
+</div>

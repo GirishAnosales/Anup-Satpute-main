@@ -1,0 +1,280 @@
+@import '../../styles/theme.scss';
+
+@media screen and (min-width:0px) {
+    .home {
+        background-color: $primary7;
+        margin-top: 3rem;
+
+        .r1 {
+            .r1c1 {
+                padding: 4rem 2rem;
+
+                .h3 {
+                    text-align: center;
+                    font-family: 'Dosis', sans-serif !important;
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .r2 {
+            height: 100%;
+            padding-bottom: 4rem;
+
+            .r2c1 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .r2c1r1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4rem 0;
+
+                    .r2c1r1c1 {
+                        height: 20vh;
+
+                        .img-group {
+                            overflow: hidden;
+                            height: inherit;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            .img {
+                                height: 100px;
+                                width: 200px;
+                                position: absolute;
+                                border-radius: 1rem;
+                                box-shadow: 2px 4px 16px 2px #00000060;
+                                overflow: hidden;
+                            }
+
+                            .one {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(-1rem) translateY(-1rem) skewY(-8deg);
+                                opacity: 0.33;
+                            }
+
+                            .one:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(-1rem) translateY(-4rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+
+                            .two {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(0rem) translateY(0rem) skewY(-8deg);
+                                opacity: 0.66;
+                            }
+
+                            .two:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(0rem) translateY(-3rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+
+                            .three {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(1rem) translateY(1rem) skewY(-8deg);
+                                opacity: 0.99;
+                            }
+
+                            .three:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(1rem) translateY(-2rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .r2c1r1c2 {
+                        height: 10vh;
+
+                        .title {
+                            height: max-content;
+                            text-align: right;
+
+                            .h3 {
+                                text-transform: uppercase;
+                                letter-spacing: 0.2rem;
+                            }
+
+                            .mat-button {
+                                text-transform: uppercase;
+                                letter-spacing: 0.2rem;
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .home {
+        .r2 {
+            .r2c1 {
+                .r2c1r1 {
+                    .r2c1r1c1 {
+                        height: 40vh;
+
+                        .img-group {
+                            overflow: hidden;
+                            height: inherit;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            .img {
+                                height: 224px;
+                                width: 356px;
+                                position: absolute;
+                                border-radius: 1rem;
+                                box-shadow: 2px 4px 16px 2px #00000060;
+                                overflow: hidden;
+                            }
+
+                            .one {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(-2rem) translateY(-2rem) skewY(-8deg);
+                                opacity: 0.33;
+                            }
+
+                            .one:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(-2rem) translateY(-6rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+
+                            .two {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(0rem) translateY(0rem) skewY(-8deg);
+                                opacity: 0.66;
+                            }
+
+                            .two:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(0rem) translateY(-4rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+
+                            .three {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(2rem) translateY(2rem) skewY(-8deg);
+                                opacity: 0.99;
+                            }
+
+                            .three:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(2rem) translateY(-2rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .r2c1r1c2 {
+                        height: 10vh;
+
+                        .title {
+                            height: max-content;
+                            text-align: right;
+
+                            .h3 {
+                                text-transform: uppercase;
+                                letter-spacing: 0.2rem;
+                            }
+
+                            .mat-button {
+                                text-transform: uppercase;
+                                letter-spacing: 0.2rem;
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .home {
+        .r2 {
+            .r2c1 {
+                height: inherit;
+                padding: 4rem 0;
+
+                .r2c1r1 {
+                    .r2c1r1c1 {
+                        .img-group {
+                            .img {
+                                height: 224px;
+                                width: 356px;
+                                position: absolute;
+                                border-radius: 1rem;
+                                box-shadow: 2px 4px 16px 2px #00000060;
+                                overflow: hidden;
+                            }
+
+                            .one {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(-2rem) translateY(-2rem) skewY(-8deg);
+                                opacity: 0.33;
+                            }
+
+                            .one:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(-2rem) translateY(-6rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+
+                            .two {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(0rem) translateY(0rem) skewY(-8deg);
+                                opacity: 0.66;
+                            }
+
+                            .two:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(0rem) translateY(-4rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+
+                            .three {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(2rem) translateY(2rem) skewY(-8deg);
+                                opacity: 0.99;
+                            }
+
+                            .three:hover {
+                                transition: 0.3s ease-in-out;
+                                transform: translateX(2rem) translateY(-2rem) skewY(-8deg);
+                                opacity: 1;
+                            }
+                        }
+
+                        .title {
+                            height: max-content;
+                            text-align: right;
+
+                            .h3 {
+                                text-transform: uppercase;
+                                letter-spacing: 0.2rem;
+                            }
+
+                            .mat-button {
+                                text-transform: uppercase;
+                                letter-spacing: 0.2rem;
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

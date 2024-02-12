@@ -1,0 +1,51 @@
+@import "../../styles/theme.scss";
+
+@media screen and (min-width: 0px) {
+    .home {
+        background-color: $b1;
+
+        .r1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            height: 100%;
+
+            .r1c1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 6rem;
+
+                .img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        background-color: $b1;
+
+        .r1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            height: 100%;
+
+            .r1c1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 6rem;
+
+                .img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

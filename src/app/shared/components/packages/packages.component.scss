@@ -1,0 +1,82 @@
+@import '../../../styles/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        text-align: center;
+
+        .r2 {
+            min-height: 80vh;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .h1 {
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+            }
+
+            .r2c1 {
+                padding: 2rem;
+
+                .mat-card {
+                    padding: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 0px 0px 0px #00000000;
+
+                    .h4 {
+                        padding: 2rem;
+                        text-transform: uppercase;
+                    }
+
+                    .price {
+                        height: 256px;
+                        width: 256px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .h5 {
+                            padding: 1rem;
+                        }
+                    }
+
+                    .price1 {
+                        background-image: url('../../../../assets/Packages/silver.jpg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                    .price2 {
+                        background-image: url('../../../../assets/Packages/gold.jpg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                    .price3 {
+                        background-image: url('../../../../assets/Packages/platinium.jpg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                    .mat-button {
+                        margin: 2rem;
+                        padding: 1rem;
+                        background-color: $b0;
+                        color: $white;
+                        border-radius: 0;
+                        transition: 0.3s;
+                        width: max-content;
+                    }
+
+                    .mat-button:hover {
+                        transition: 0.3s;
+                        filter: opacity(0.5);
+                    }
+                }
+            }
+        }
+    }
+}

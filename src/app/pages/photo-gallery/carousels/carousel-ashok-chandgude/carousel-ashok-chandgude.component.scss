@@ -1,0 +1,28 @@
+@import "../../../../styles/theme.scss";
+@import "../../../../styles/keyframes.scss";
+
+@media screen and (min-width: 0px) {
+    .ngb-carousel {
+        overflow: hidden;
+
+        .img-wrapper {
+            padding: 1rem;
+
+            .img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .carousel-caption {
+            .mat-button {
+                color: $white;
+
+                .h3 {
+                    font-family: 'Dosis', sans-serif !important;
+                    margin: 0%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+<div class="container-fluid home" *ngIf="isSmall | async">
+    <div class="row r1">
+        <div class="col-sm-12 r1c1">
+            <mat-sidenav-container class="mat-sidenav-container" dir="rtl">
+                <mat-sidenav #drawer class="mat-sidenav" fixedInViewport
+                    [attr.role]="(isSmall | async) ? 'dialog' : 'navigation'" mode="over">
+
+                    <mat-nav-list class="mat-nav-list" dir="ltr">
+
+                        <div class="close-button">
+                            <button class="mat-icon-button" type="button" aria-label="Toggle sidenav" mat-icon-button
+                                (click)="drawer.close()">
+                                <mat-icon class="mat-icon">close</mat-icon>
+                            </button>
+                        </div>
+
+                        <a class="a" mat-list-item (click)="drawer.close()" href="home">
+                            <h6 class="h6">Home</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services">
+                            <h6 class="h6">Services</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="completed-projects">
+                            <h6 class="h6">Completed Projects</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="careers">
+                            <h6 class="h6">Careers</h6>
+                        </a>
+
+                        <p class="p">Properties</p>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="properties/1-bhk-interior-design">
+                            <h6 class="h6">1 BHK Interior Design</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="properties/2-bhk-interior-design">
+                            <h6 class="h6">2 BHK Interior Design</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="properties/3-bhk-interior-design">
+                            <h6 class="h6">3 BHK Interior Design</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="properties/premium-interiors">
+                            <h6 class="h6">Premium Interiors</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="properties/corporate-interiors">
+                            <h6 class="h6">Corporate Interiors</h6>
+                        </a>
+
+                        <p class="p">More</p>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="become-a-partner">
+                            <h6 class="h6">Become a partner</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="blog">
+                            <h6 class="h6">Blog</h6>
+                        </a>
+
+                        <p class="p">Policies</p>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="payment">
+                            <h6 class="h6">Payment</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="warranty">
+                            <h6 class="h6">Warranty</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="cancellations">
+                            <h6 class="h6">Cancellations</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="grievance">
+                            <h6 class="h6">Grievance</h6>
+                        </a>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="careers">
+                            <h6 class="h6">Careers</h6>
+                        </a>
+
+                    </mat-nav-list>
+                </mat-sidenav>
+
+                <mat-sidenav-content class="mat-sidenav-content" dir="ltr">
+                    <mat-toolbar class="mat-toolbar">
+                        <h6 class="h6">AnupLifestyles</h6>
+                        <button class="mat-icon-button" type="button" aria-label="Toggle sidenav" mat-icon-button
+                            (click)="drawer.toggle()">
+                            <mat-icon class="mat-icon">menu</mat-icon>
+                        </button>
+                    </mat-toolbar>
+                </mat-sidenav-content>
+
+            </mat-sidenav-container>
+        </div>
+    </div>
+</div>

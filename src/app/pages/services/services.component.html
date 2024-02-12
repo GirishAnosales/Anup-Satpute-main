@@ -1,0 +1,22 @@
+<div class="container-fluid home">
+    <!-- SERVICES -->
+    <div class="row r1">
+        <div class="col-lg-9 r1c1">
+            <div class="row r1c1r1">
+                <div class="col-lg-4 r1c1r1c1" *ngFor="let data of servicesContent.servicesCards">
+                    <mat-card class="mat-card">
+                        <mat-card-header class="mat-card-header">
+                            <mat-card-title class="mat-card-title">
+                                <div class="number">{{data.number}}</div>
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content class="mat-card-content">
+                            <div class="text1">{{data.text1}}</div>
+                            <div class="text2">{{data.text2}}</div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

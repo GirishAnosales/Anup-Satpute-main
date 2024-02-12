@@ -1,0 +1,116 @@
+@import '../../styles/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        margin-top: 4rem;
+        height: 100%;
+
+        .r1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            height: 100%;
+
+            .r1c1 {
+                padding: 0;
+
+                .mat-card {
+                    .mat-tab-group {
+                        .text {
+                            position: absolute;
+                            top: 3rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            color: $white;
+                            padding: 2rem;
+
+                            .h1 {
+                                padding: 2rem 0;
+                                font-weight: bold;
+                                font-size: 2rem;
+                            }
+
+                            .p {
+                                padding: 2rem;
+                                font-weight: 500;
+                                font-size: small;
+                                background-color: #00000090;
+                                backdrop-filter: blur(1rem);
+                            }
+                        }
+
+                        .mat-raised-button {
+                            margin-top: 2rem;
+                            font-size: 1.5rem;
+                            padding: 2rem;
+                            border-radius: 0;
+                            width: max-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-card {
+                    .mat-tab-group {
+                        .text {
+                            width: 425px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-card {
+                    .mat-tab-group {
+                        .text {
+                            width: 640px;
+
+                            .h1 {
+                                padding: 4rem 0;
+                                font-weight: bold;
+                                font-size: 4rem !important;
+                            }
+
+                            .p {
+                                font-weight: 500;
+                                font-size: 1.3rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-card {
+                    .mat-tab-group {
+                        .img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

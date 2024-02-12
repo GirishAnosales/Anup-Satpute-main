@@ -1,0 +1,102 @@
+@import '../../styles/theme.scss';
+@import '../../styles/keyframes.scss';
+
+@media screen and (min-height: 0px) {
+    .home {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+
+        .r1 {
+            .r1c1 {
+                padding: 0%;
+
+                .mat-sidenav-container {
+                    .mat-sidenav {
+                        width: 100%;
+                        background-color: $primary7;
+
+                        .mat-nav-list {
+                            animation: fade-in 2s;
+
+                            .close-button {
+                                display: flex;
+                                align-content: flex-end;
+                                justify-content: flex-end;
+                                align-self: flex-end;
+
+                                .mat-icon-button {
+                                    .mat-icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: $dark-blue;
+                                    }
+                                }
+
+                                .mat-icon-button:hover {
+                                    .mat-icon {
+                                        color: $light-blue;
+                                    }
+                                }
+                            }
+
+                            .a {
+                                text-align: start;
+
+                                .h6 {
+                                    color: $dark-blue;
+                                    font-size: small;
+                                }
+                            }
+
+                            .a:hover {
+                                background-color: $light-blue;
+
+                                .h6 {
+                                    color: $light-beige;
+                                    font-size: small;
+                                }
+                            }
+
+                            .p {
+                                background-color: $light-beige;
+                                color: $dark-blue;
+                                padding: 0 1rem;
+                                font-size: small;
+                                text-align: end;
+                            }
+                        }
+                    }
+
+                    .mat-sidenav-content {
+                        .mat-toolbar {
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: $light-beige;
+
+                            .h6 {
+                                color: $dark-blue;
+                            }
+
+                            .mat-icon-button {
+                                .mat-icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $dark-blue;
+                                }
+                            }
+
+                            .mat-icon-button:hover {
+                                .mat-icon {
+                                    color: $light-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

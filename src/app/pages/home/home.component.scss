@@ -1,0 +1,64 @@
+/* Default behavior (for iOS devices) */
+.parallax-bg-scroll {
+    background-image: url('../../../assets/content/home/we-are/weAre2.jpg');
+    min-height: 60vh;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -webkit-background-attachment: scroll;
+    -moz-background-attachment: scroll;
+    background-attachment: scroll;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    background-position: center;
+}
+
+/* Android-specific behavior */
+.parallax-bg-fixed {
+    background-image: url('../../../assets/content/home/we-are/weAre2.jpg');
+    min-height: 60vh;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    background-attachment: fixed;
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    background-position: center;
+}
+
+@media screen and (min-width: 0px) {
+    .parallax {
+        background-image: url('../../../assets/content/home/we-are/weAre2.jpg');
+        min-height: 60vh;
+        height: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -webkit-background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        background-attachment: fixed;
+        -webkit-background-position: center;
+        -moz-background-position: center;
+        background-position: center;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        z-index: 10;
+        background-color: #25D366;
+        padding: 1.5rem;
+
+        .bi-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+    }
+}

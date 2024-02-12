@@ -1,0 +1,145 @@
+@import "../../styles/theme.scss";
+@import "../../styles/mixins/display";
+
+@media screen and (min-width: 0px) {
+    .home {
+        .r1 {
+            @include center-center;
+            min-height: 70vh;
+            height: 100%;
+            align-items: flex-start;
+
+            .h1 {
+                text-align: center;
+                color: $white;
+                font-size: 2rem;
+                padding: 4rem 1rem 1rem 1rem;
+            }
+
+            .r1c1 {
+                @include center-top;
+                padding: 2rem;
+                padding-bottom: 4rem;
+
+                .whyus-wrapper {
+
+                    .h4,
+                    .h6 {
+                        color: $white;
+                    }
+
+                    .icons-group {
+                        @include center-center;
+                        padding: 1rem;
+
+                        .icon {
+                            width: 4rem;
+                            color: $white;
+                        }
+                    }
+
+                    .title {
+                        @include center-center;
+                        text-align: center;
+                        min-height: 6rem;
+                        height: 100%;
+
+                        .h4 {
+                            text-align: center;
+                        }
+                    }
+
+                    .content {
+                        @include center-center;
+                        text-align: center;
+                        min-height: 6rem;
+                        height: 100%;
+
+                        .h6 {
+                            // min-height: 20rem;
+                            height: 100%;
+                            text-align: justify !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .r1 {
+        .r1c1 {
+            .whyus-wrapper {
+                .content {
+                    .h6 {
+                        width: 425px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home {
+        .r1 {
+            .h1 {
+                font-size: 3rem;
+                padding-bottom: 0;
+            }
+
+            .r1c1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .whyus-wrapper {
+                    padding: 1rem;
+                    @include center-top-col;
+                    align-items: center;
+
+                    .h4,
+                    .h6 {
+                        color: $white;
+                    }
+
+                    .icons-group {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+
+                        .icon {
+                            width: 4rem;
+                            color: $white;
+                        }
+                    }
+
+                    .title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+
+                        .h4 {
+                            text-align: center;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+
+                        .h6 {
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

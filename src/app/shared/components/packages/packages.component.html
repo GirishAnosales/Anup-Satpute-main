@@ -1,0 +1,32 @@
+<div class="container-fluid home">
+    <div class="row r2">
+        <h1 class="h1">Packages</h1>
+        <div class="col-lg-3 r2c1">
+            <mat-card class="mat-card mc1">
+                <h4 class="h4">{{packages[0].name}}</h4>
+                <div class="price price1">
+                    <h5 class="h5">{{packages[0].price}}</h5>
+                </div>
+                <button class="mat-button" (click)="openDialog()" mat-stroked-button>Get Quote</button>
+            </mat-card>
+        </div>
+        <div class="col-lg-3 r2c1">
+            <mat-card class="mat-card mc2">
+                <h4 class="h4">{{packages[1].name}}</h4>
+                <div class="price price2">
+                    <h5 class="h5">{{packages[1].price}}</h5>
+                </div>
+                <button class="mat-button" (click)="openDialog()" mat-stroked-button>Get Quote</button>
+            </mat-card>
+        </div>
+        <div class="col-lg-3 r2c1">
+            <mat-card class="mat-card mc3">
+                <h4 class="h4">{{packages[2].name}}</h4>
+                <div class="price price3">
+                    <h5 class="h5">{{packages[2].price}}</h5>
+                </div>
+                <button class="mat-button" (click)="openDialog()" mat-stroked-button>Get Quote</button>
+            </mat-card>
+        </div>
+    </div>
+</div>

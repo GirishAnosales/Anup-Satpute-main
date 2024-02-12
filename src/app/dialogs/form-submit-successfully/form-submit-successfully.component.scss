@@ -1,0 +1,23 @@
+@import '../../styles/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .mat-dialog-content {
+        background-color: $white;
+
+        .home {
+            .r1 {
+                .r1c1 {
+                    text-align: center;
+                    .img{
+                        height: 256px;
+                        width: 256px;
+                    }
+
+                    .h1,.h4{
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

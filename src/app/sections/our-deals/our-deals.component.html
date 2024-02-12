@@ -1,0 +1,19 @@
+<div class="container-fluid home">
+    <div class="row r1">
+        <div class="col-lg-5 r1c1" *ngFor="let image of propertyImages">
+            <mat-card class="mat-card">
+                <div class="img-wrapper">
+                    <img class="img" [src]="image.imageSrc" [alt]="image.imageAlt">
+                </div>
+                <div class="property-info">
+                    <h5 class="h5">{{image.imageAlt}}</h5>
+                </div>
+                <div class="button-group">
+                    <button class="mat-stroked-button" [routerLink]="image.routerLinkUrl" (click)="onClick()" mat-stroked-button>
+                        <span class="span">{{image.button}}</span>
+                    </button>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

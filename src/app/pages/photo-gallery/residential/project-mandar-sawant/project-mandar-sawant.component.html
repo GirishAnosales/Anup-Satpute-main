@@ -1,0 +1,19 @@
+<div class="container-fluid home">
+    <div class="row r1">
+        <div class="col-lg-12 r1c1">
+            <h3 class="h3">3 BHK</h3>
+        </div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-lg-4 r2c1" *ngFor="let images of projectMandarSawantData.landscape">
+            <img class="img" [src]="images.image" alt="3 BHK">
+        </div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-lg-4 r2c1" *ngFor="let images of projectMandarSawantData.portrait">
+            <img class="img" [src]="images.image" alt="3 BHK">
+        </div>
+    </div>
+</div>  

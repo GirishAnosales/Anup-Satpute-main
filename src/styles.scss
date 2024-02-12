@@ -1,0 +1,103 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Anup-Satpute-primary: mat.define-palette(mat.$indigo-palette);
+$Anup-Satpute-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Anup-Satpute-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$Anup-Satpute-theme: mat.define-light-theme((color: (primary: $Anup-Satpute-primary,
+				accent: $Anup-Satpute-accent,
+				warn: $Anup-Satpute-warn,
+			)));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($Anup-Satpute-theme);
+
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	// font-family: 'Dosis', sans-serif;
+	font-family: 'Rajdhani', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0 !important;
+	// font-family: 'Dosis', sans-serif;
+	font-family: 'Rajdhani', sans-serif !important;
+}
+
+.mat-mdc-menu-content {
+	padding: 0 !important;
+	margin: 0;
+	list-style-type: none;
+}
+
+.mat-mdc-menu-item.mdc-list-item {
+	transition: 0.3s;
+	border-left: 0.4rem solid #94a8c1;
+	border-right: 0.4rem solid #94a8c1;
+	text-transform: uppercase;
+	font-size: small;
+}
+
+.mat-mdc-menu-item.mdc-list-item:hover {
+	transition: 0.3s;
+	border-left: 0.4rem solid #94a8c1;
+	border-right: 0.4rem solid #94a8c1;
+}
+
+.mat-mdc-tooltip {
+	font-size: 10px !important;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+	color: #000 !important;
+	font-weight: bold;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+	background-color: inherit;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+	color: #ffffff;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+	background-color: #00000080 !important;
+	backdrop-filter: blur(1rem);
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
