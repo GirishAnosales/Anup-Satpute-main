@@ -17,7 +17,7 @@ export class AppComponent {
 		//   filter(event => event instanceof NavigationEnd),
 		// );
 		// navEndEvents.subscribe((event: NavigationEnd) => {
-		//   gtag('config', 'AW-11454875150', {
+		//   gtag('config', 'G-VZCZEQSZVK', {
 		//     'page-path': event.urlAfterRedirects
 		//   });
 		// })
@@ -27,11 +27,10 @@ export class AppComponent {
 			  filter((event): event is NavigationEnd => event instanceof NavigationEnd)
 			)
 			.subscribe(event => {
-			  gtag('config', 'G-KMQ5XQ76Q7', {
+			  gtag('config', 'G-VZCZEQSZVK', {
 				'page-path': event.urlAfterRedirects
 			  })
 			});
-		
 	  }
 
 }
